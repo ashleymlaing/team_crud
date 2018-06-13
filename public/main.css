@@ -1,0 +1,10 @@
+body {
+    background-color: #ccaadd;
+}
+h1 {
+    color: red;
+    background-color: #aaaaaa;
+}
+*, ul, form {
+  background-color: #cccccc;
+}
