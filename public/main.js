@@ -7,7 +7,7 @@ Array.from(thumbUp).forEach(function(element) {
         const name = this.parentNode.parentNode.childNodes[1].innerText
         const msg = this.parentNode.parentNode.childNodes[3].innerText
         const thumbUp = parseFloat(this.parentNode.parentNode.childNodes[5].innerText)
-        fetch('favesong', {
+        fetch('/song', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -32,7 +32,7 @@ Array.from(trash).forEach(function(element) {
         console.log('Dro be here')
         const name = this.parentNode.parentNode.childNodes[1].innerText
         const msg = this.parentNode.parentNode.childNodes[3].innerText
-        fetch('favesong', {
+        fetch('/song', {
           method: 'delete',
           headers: {
             'Content-Type': 'application/json'
